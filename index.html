@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Search Page</title>
+    <title>Modern Movie Search</title>
+    <!-- Modern Typography: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="main">
-        <div class="row" style="justify-content: center;">
-            <input type="search" id="search" autofocus autocomplete="off" placeholder="Search here..." />
+    <!-- Background dynamic mesh -->
+    <div class="background-mesh"></div>
+    
+    <!-- Modern Sticky Header -->
+    <header>
+        <div class="header-container">
+            <h1 class="logo">Movie<span>Base</span></h1>
+            <div class="search-container">
+                <input type="search" id="search" autofocus autocomplete="off" placeholder="Search for movies, actors, etc..." />
+                <!-- Search Icon right next to the placeholder text -->
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </div>
         </div>
-        <div class="row" id="movie-box">
+    </header>
+    
+    <!-- Movie Grid Container -->
+    <main>
+        <div class="movie-grid" id="movie-box">
+            <!-- Movie cards injected dynamically via Javascript -->
+        </div>
+    </main>
 
-        </div>
-    </div>
     <script src="script.js"></script>
 </body>
-
 </html>
